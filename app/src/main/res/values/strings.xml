@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Michael\'s Lottery</string>
+    <string name="loteria_lui_mihai">Michael\'s Lottery</string>
+    <string name="backgroundimage">backgroundImage</string>
+    <string name="playButton">Play</string>
+    <string name="ball">ball</string>
+</resources>

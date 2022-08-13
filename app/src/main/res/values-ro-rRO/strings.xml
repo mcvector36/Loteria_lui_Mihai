@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Loteria lui Mihai</string>
+    <string name="playButton">Joacă</string>
+    <string name="loteria_lui_mihai">Loteria lui Mihai</string>
+    <string name="ball">bilă</string>
+    <string name="backgroundimage">imagine de fundal</string>
+</resources>

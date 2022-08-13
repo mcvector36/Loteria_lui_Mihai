@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/lotto"
+    android:focusable="auto"
+    app:layout_collapseMode="none"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/scrollView"
+            app:layout_constraintTop_toTopOf="@+id/scrollView">
+
+            <TextView
+                android:id="@+id/textTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/aguafina_script"
+                android:text="@string/loteria_lui_mihai"
+                android:textAlignment="center"
+                android:textColor="#FF4081"
+                android:textSize="48sp"
+                app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                tools:ignore="TextContrastCheck" />
+
+            <ImageView
+                android:id="@+id/ball1"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:contentDescription="@string/ball"
+                app:layout_constraintBottom_toTopOf="@+id/ball4"
+                app:layout_constraintEnd_toStartOf="@+id/ball2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textTitle"
+                app:srcCompat="@drawable/i1" />
+
+            <ImageView
+                android:id="@+id/ball2"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:contentDescription="@string/ball"
+                app:layout_constraintBottom_toTopOf="@+id/ball5"
+                app:layout_constraintEnd_toStartOf="@+id/ball3"
+                app:layout_constraintStart_toEndOf="@+id/ball1"
+                app:layout_constraintTop_toBottomOf="@+id/textTitle"
+                app:srcCompat="@drawable/i2" />
+
+            <ImageView
+                android:id="@+id/ball3"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:contentDescription="@string/ball"
+                app:layout_constraintBottom_toTopOf="@+id/ball6"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/ball2"
+                app:layout_constraintTop_toBottomOf="@+id/textTitle"
+                app:srcCompat="@drawable/i3" />
+
+            <ImageView
+                android:id="@+id/ball4"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:contentDescription="@string/ball"
+                app:layout_constraintBottom_toTopOf="@id/playButton"
+                app:layout_constraintEnd_toStartOf="@id/ball5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ball1"
+                app:srcCompat="@drawable/i4" />
+
+            <ImageView
+                android:id="@+id/ball5"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:contentDescription="@string/ball"
+                app:layout_constraintBottom_toTopOf="@id/playButton"
+                app:layout_constraintEnd_toStartOf="@id/ball6"
+                app:layout_constraintStart_toEndOf="@id/ball4"
+                app:layout_constraintTop_toBottomOf="@id/ball2"
+                app:srcCompat="@drawable/i5" />
+
+            <ImageView
+                android:id="@+id/ball6"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:contentDescription="@string/ball"
+                app:layout_constraintBottom_toTopOf="@id/playButton"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/ball5"
+                app:layout_constraintTop_toBottomOf="@id/ball3"
+                app:srcCompat="@drawable/i6" />
+
+            <Button
+                android:id="@+id/playButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="#FF4081"
+                android:fontFamily="@font/alfa_slab_one"
+                android:text="@string/playButton"
+                android:textColor="#FFFF00"
+                android:textSize="36sp"
+                app:backgroundTint="#FF4081"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout2"
+                app:layout_constraintVertical_bias="1.0" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
