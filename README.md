@@ -1,4 +1,4 @@
-# Loteria_lui_Mihai (Michael's Lottery)
+# Loteria lui Mihai (Michael's Lottery)
 # Română:
 Aplicația generează 6 numere aleatorii, care pot fi numerele loto câștigătoare. Tot ce trebuie să faceți este să apăsați butonul "Joacă" pentru a afișa numere noi.
 
